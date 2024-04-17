@@ -26,3 +26,7 @@ class State(BaseModel, Base):
                     cities_list.append(city)
             return cities_list
 
+    def __init__(self, *args, **kwargs):
+        """initializes state"""
+        super().__init__(*args, **kwargs)
+

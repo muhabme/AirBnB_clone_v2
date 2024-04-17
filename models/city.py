@@ -15,3 +15,7 @@ class City(BaseModel, Base):
         # Define attributes for alternative storage methods or add logic as required for non-DB storage
         state_id = ""
         name = ""
+
+    def __init__(self, *args, **kwargs):
+        """initializes city"""
+        super().__init__(*args, **kwargs)
